@@ -1,8 +1,14 @@
-# /usr/bin/python3
-# encoding: utf-8
 from datetime import datetime, timedelta
+import inflect
+
+def number_to_words(number):
+    p = inflect.engine()
+    return p.number_to_words(number).capitalize()
 
 def lookback(days):
+    p = inflect.engine()
+    days_in_words = p.number_to_words(days).capitalize()
+
     start_date = datetime.now() - timedelta(days=days)
     end_date = datetime.now()
 
@@ -13,8 +19,8 @@ def lookback(days):
     range_uuid = '%20OR%20'.join(date.strftime('%Y%m%d') for date in dates_in_range)
 
     range_file_name = f'{range_uuid}'  # replace with your actual file naming convention
-    range_link = ("[" + str(days) + " Day Lookback at ZK](thearchive://match/%23proofing%20" + range_file_name + ")")
+    range_link = ("[" + days_in_words + "-Day Look back at ZK](thearchive://match/%23proofing%20" + range_file_name + ")")
     return range_link
 
 if __name__ == "__main__":
-    print(lookback(6))
+    print(lookback(3))

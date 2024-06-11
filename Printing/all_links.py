@@ -1,14 +1,9 @@
 import os
-import pathlib
-import sys
 import re
-import os
+import pathlib
 from TheArchivePath import TheArchivePath
 
 zettelkasten = pathlib.Path(TheArchivePath())
-
-import os
-import re
 
 def all_links(target):
     links = []

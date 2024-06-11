@@ -1,5 +1,11 @@
 import fileinput
+import os
 from pathlib import Path
+
+#TODO - add the ability to search in mutliple specific directories.
+#TODO - test quoted text and multi-word search terms
+#TODO - add the ability to search for multiple terms at oncewhere terms only appear on the same line or on different lines
+#TODO - setup Keyboard Maestro to run this script with highlighted text as the search term and display the results in a Textedit window
 
 def search_term_in_directory(term):
     # define which directory to scan
@@ -42,6 +48,6 @@ def search_term_in_zettelkasten(term):
                     print(f"{x}")
                 print("\n")
 
-term = 'disagree'
+term = os.environ.get("KMVAR_List_Search_Term", "belly")
 search_term_in_zettelkasten(term)
 search_term_in_directory(term)

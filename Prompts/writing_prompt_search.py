@@ -7,24 +7,24 @@ from pathlib import Path
 #TODO - add the ability to search for multiple terms at oncewhere terms only appear on the same line or on different lines
 #TODO - setup Keyboard Maestro to run this script with highlighted text as the search term and display the results in a Textedit window
 
-def search_term_in_directory(term):
-    # define which directory to scan
-    p = Path('/Users/will/Dropbox/Projects/Capture DB/')
+def search_term_in_directories(directories, term):
+    for directory in directories:
+        # define which directory to scan
+        p = Path(directory)
 
-    # iterate over all .md files in the directory
-    for file_path in p.glob('*.md'):
-        # select lines that contain the term
-        lines = list(fileinput.input(str(file_path)))
-        matching_lines = [line for line in lines if term in line]
+        # iterate over all .md files in the directory
+        for file_path in p.glob('*.md'):
+            # select lines that contain the term
+            lines = list(fileinput.input(str(file_path)))
+            matching_lines = [line for line in lines if term in line]
 
-        # if there are any matching lines, print the file name and the lines
-        if matching_lines:
-            print(f"## Search results for \"{term}\" in the list of {file_path.stem}.\n")
-            for x in matching_lines:
-                x = x.replace("\n", "")
-                print(f"{x}")
-            print("\n")
-
+            # if there are any matching lines, print the file name and the lines
+            if matching_lines:
+                print(f"## Search results for \"{term}\" in the list of {file_path.stem}.\n")
+                for x in matching_lines:
+                    x = x.replace("\n", "")
+                    print(f"{x}")
+                print("\n")
 
 def search_term_in_zettelkasten(term):
     # define which directory to scan
@@ -47,7 +47,13 @@ def search_term_in_zettelkasten(term):
                     x = x.replace("\n", "")
                     print(f"{x}")
                 print("\n")
-
+# Usage
 term = os.environ.get("KMVAR_List_Search_Term", "belly")
+directories = [
+    '/Users/will/Dropbox/Writing Tools/', 
+    '/Users/will/Dropbox/Projects/Capture DB/', 
+    '/Users/will/Dropbox/Writing Tools/Better than Great'
+]   
 search_term_in_zettelkasten(term)
-search_term_in_directory(term)
+search_term_in_directories(directories, term)
+

@@ -2,10 +2,10 @@ import fileinput
 import os
 from pathlib import Path
 
-#TODO - make the search case insensitive
 #TODO - test quoted text and multi-word search terms
 #TODO - add the ability to search for multiple terms at oncewhere terms only appear on the same line or on different lines
-#TODO - setup Keyboard Maestro to run this script with highlighted text as the search term and display the results in a Textedit window
+#TODO - setup Keyboard Maestro to run this script display the results in a Textedit window
+#TODO - put a line feed between each search result and 2 between each file search result
 
 def search_term_in_directories(directories, term):
     term = term.lower()  # convert term to lower case

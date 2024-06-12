@@ -6,6 +6,7 @@ from pathlib import Path
 #TODO - add the ability to search for multiple terms at oncewhere terms only appear on the same line or on different lines
 #TODO - setup Keyboard Maestro to run this script display the results in a Textedit window
 #TODO - put a line feed between each search result and 2 between each file search result
+#TODO - Report that program couldn't find any results if no results are found
 
 def search_term_in_directories(directories, term):
     term = term.lower()  # convert term to lower case

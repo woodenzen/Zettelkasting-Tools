@@ -13,8 +13,8 @@ def lookback(days):
     range_uuid = '%20OR%20'.join(date.strftime('%Y%m%d') for date in dates_in_range)
 
     range_file_name = f'{range_uuid}'  # replace with your actual file naming convention
-    range_link = ("[" + str(days) + " Day Lookback at ZK](thearchive://match/%23proofing%20" + range_file_name + ")")
+    range_link = ("[" + str(days) + "-Day Lookback at ZK](thearchive://match/%23proofing%20" + range_file_name + ")")
     return range_link
 
 if __name__ == "__main__":
-    print(lookback(6))
+    print(lookback(2))

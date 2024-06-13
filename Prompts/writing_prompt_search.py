@@ -36,8 +36,33 @@ def search_term_in_zettelkasten(term):
                     print(f"{x}")
                 print("\n")
 
+def beautiful_language_search(term):
+    term = term.lower()  # convert term to lower case
+    p = Path('/Users/will/Dropbox/zettelkasten/')
+    # results = []  # define an empty list to store the results
+    results = {}  # define an empty dictionary to store the results
+    for file_path in p.glob('*.md'):
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+            for i in range(len(lines) - 1):  # subtract 1 to avoid IndexError for last line
+                if '#beautiful-language' in lines[i]:
+                    if term in lines[i + 1]: 
+                        x = lines[i + 1].replace("\n", "")
+                        if file_path.stem[:-13] in results:
+                            results[file_path.stem[:-13]].append(x)
+                        else:
+                            results[file_path.stem[:-13]] = [x]
+
+    # print the results
+    for file, lines in results.items():
+        print(f"## Beautiful Language results for \"{term}\" in the file {file}.\n")
+        for line in lines:
+            print(f"{line}")
+        print("\n")
+    return results
+
 # Usage
-term = os.environ.get("KMVAR_List_Search_Term", "belly")
+term = os.environ.get("KMVAR_List_Search_Term", "word")
 directories = [
     '/Users/will/Dropbox/Writing Tools/', 
     '/Users/will/Dropbox/Projects/Capture DB/', 
@@ -45,3 +70,4 @@ directories = [
 ]   
 search_term_in_zettelkasten(term)
 search_term_in_directories(directories, term)
+beautiful_language_search(term)

@@ -20,7 +20,7 @@ def search_term_in_directories(directories, terms):
                     print(f"{x}")
                 print("\n")
     if not found:
-        print(f"No results were found for {terms} in the List Files.")
+        print(f"### No results were found for {terms} in the Lists.")
 
 def search_term_in_zettelkasten(terms):
     p = Path('/Users/will/Dropbox/zettelkasten/')
@@ -37,7 +37,7 @@ def search_term_in_zettelkasten(terms):
                     print(f"{x}")
                 print("\n")
     if not found:
-        print(f"No results were found for {terms} in the Zettelkasten.")
+        print(f"### No results were found for {terms} in the Zettelkasten.")
 
 def beautiful_language_search(terms):
     p = Path('/Users/will/Dropbox/zettelkasten/')
@@ -62,7 +62,7 @@ def beautiful_language_search(terms):
                 print(f"{line}")
             print("\n")
     else:
-        print(f"No Beautiful Language results were found for {terms}.")
+        print(f"### No Beautiful Language results were found for {terms}.")
     return results
 
 # Usage

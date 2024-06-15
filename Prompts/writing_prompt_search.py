@@ -12,7 +12,7 @@ def search_term_in_directories(directories, terms):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
                 found = True
-                print(f"## Search results for {terms} in the list of {file_path.stem}.\n")
+                print(f"## Search results for {terms} in the file containing the list of {file_path.stem}.\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")

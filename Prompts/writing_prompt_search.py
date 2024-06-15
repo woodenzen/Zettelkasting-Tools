@@ -33,7 +33,7 @@ def search_term_in_zettelkasten(terms):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
                 found = True
-                print(f"## Search results for {terms} in the list of {file_path.stem[:-13]}.\n")
+                print(f"## Search results for {terms} in the list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")
@@ -59,7 +59,7 @@ def beautiful_language_search(terms):
     # print the results
     if results:
         for file, lines in results.items():
-            print(f"## Beautiful Language results for {terms} in the file {file}.\n")
+            print(f"## Search results for {terms} in the note\n[{file}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
             for line in lines:
                 print(f"{line}")
             print("\n")

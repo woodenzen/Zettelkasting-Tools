@@ -2,10 +2,6 @@ import fileinput
 import os
 from pathlib import Path
 
-#TODO - multi word terms via a prompt rather than a mouse click
-#TODO - Report that program couldn't find any results if no results are found
-#TODO - Have link on each search result to open the file in the default editor
-#TODO - When nothing is found, have message that prints the {terms} in a format "XXX" "YYY" "ZZZ"
 
 def search_term_in_directories(directories, terms):
     found = False

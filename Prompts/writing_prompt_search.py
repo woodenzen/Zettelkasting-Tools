@@ -12,13 +12,13 @@ def search_term_in_directories(directories, terms):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
                 found = True
-                print(f"## Search results for {terms} in the file containing the list of {file_path.stem}.\n")
+                print(f"## Search results for '{' and '.join(terms)}' in the file containing the list of {file_path.stem}.\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")
                 print("\n")
     if not found:
-        print(f"### No results were found for {terms} in the Lists.")
+        print(f"### No results were found for '{' and '.join(terms)}' in the Lists.\n")
 
 def search_term_in_zettelkasten(terms):
     p = Path('/Users/will/Dropbox/zettelkasten/')
@@ -29,13 +29,13 @@ def search_term_in_zettelkasten(terms):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
                 found = True
-                print(f"## Search results for {terms} in the list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
+                print(f"## Search results for '{' and '.join(terms)}' in the list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")
                 print("\n")
     if not found:
-        print(f"### No results were found for {terms} in the Zettelkasten.")
+        print(f"### No results were found for '{' and '.join(terms)}' in the Zettelkasten.\n")
 
 def beautiful_language_search(terms):
     p = Path('/Users/will/Dropbox/zettelkasten/')
@@ -55,12 +55,12 @@ def beautiful_language_search(terms):
     # print the results
     if results:
         for file, lines in results.items():
-            print(f"## Search results for {terms} in the note\n[{file}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
+            print(f"## Search results for '{' and '.join(terms)}' in the note\n[{file}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
             for line in lines:
                 print(f"{line}")
             print("\n")
     else:
-        print(f"### No Beautiful Language results were found for {terms}.")
+        print(f"### No Beautiful Language results were found for '{' and '.join(terms)}'.\n")
     return results
 
 # Usage

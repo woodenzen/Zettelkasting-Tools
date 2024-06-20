@@ -1,0 +1,22 @@
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore macOS folder attributes
+__MACOSX/
+
+# Ignore macOS file metadata
+._*
+
+# Ignore Spotlight metadata
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Ignore temporary files created by macOS
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

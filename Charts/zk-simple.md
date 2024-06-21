@@ -1,11 +1,12 @@
 ```mermaid
 flowchart TD
-    A[Zettelkasten] --> B(Read)
+    A[Zettelkasting] --> B(Read)
     B --> C{Use writing to think}
-    C -->|One| D[One Note \n A Proxy for One Idea]
-    C -->|Two| E[A structure note]
-    C -->|Three| F[A writing project]
+    C --> D[One Note \n A Proxy for One Idea]
+    C --> E[A Structure or \nOutline Note]
+    C --> F[A writing project]
     D --> G[One object of attention]
     E --> H[Thinking Canvas]
+    F --> I[Use ZK as writing partner]
 
 ```    

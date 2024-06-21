@@ -9,3 +9,4 @@ This repository is for my Zettelkasting tools.
 - MindMaps 
 - Charts
 - Printing
+- Statistics

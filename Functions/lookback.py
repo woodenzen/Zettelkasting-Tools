@@ -17,4 +17,4 @@ def lookback(days):
     return range_link
 
 if __name__ == "__main__":
-    print(lookback(2))
+    print(lookback(5))

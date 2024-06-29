@@ -1,4 +1,7 @@
-# creates a zettel with names and notelinks (outputZettel) from reference note of names (inputZettel)
+# creates a zettel with names and notelinks (outputZettel) 
+# from reference note of names (inputZettel)
+# Output and Input zettels will not have any front matter - before or after
+# runing this script
 
 # User settings
 zettel='/Users/will/Dropbox/zettelkasten/'

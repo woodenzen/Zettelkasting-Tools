@@ -5,6 +5,4 @@ ss = ss.replace("\xa0", " ")
 
 print(f"""
 ## Super Slogan
-{ss}
-{'–'*5}
-""")
+{ss}""")

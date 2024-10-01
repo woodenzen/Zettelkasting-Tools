@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <title>ZK Boolean Regex Search</title>
+    <link rel="stylesheet" type="text/css" href="/Users/will/Dropbox/Projects/Zettelkasting Tools/Search/style.css">
+
+    <script type="text/javascript">
+
+        // Gets the KM variable with the specified name. If the variable
+        // is empty and "required" is true, an exception is thrown.
+        // Otherwise, the variable's value is returned,
+        function getKMVariable(name, required) {
+            var value = window.KeyboardMaestro.GetVariable(name);
+            if (required && !value) {
+                throw Error("Variable '" + name + "' not set");
+            }
+            return value;
+        }
+
+        // Keyboard Maestro calls this function when the window is ready.
+        function KMWindow() {
+            try {
+                // Set the body style to the desired width and height
+                document.body.style.width = getKMVariable("dspBodyWidth", true) + 'px';
+                document.body.style.height = getKMVariable("dspBodyHeight", true) + 'px';
+
+                document.title = getKMVariable("ztitle", true);
+
+                // Setup the position and size, and return it. KM will
+                // use the values to set the position and size of the
+                // window. If no position has been set yet, we default it.
+                // KM will parse the variable names "dspWindowWidth" and
+                // "dspWindowHeight" for us.
+                var lastPosition = getKMVariable("dspWindowPosition");
+                if (lastPosition == '') {
+                    lastPosition = "200, 200";
+                }
+
+                // Add event listener for window move
+                window.addEventListener("move", saveWindowPosition);
+                 // Set the default tab to tab1
+                document.getElementById("tab1").style.display = "block";
+                document.getElementsByClassName("tablinks")[0].className += " active";
+                return lastPosition + ", dspWindowWidth, dspWindowHeight";
+            } catch (e) {
+                document.write("Error in KMWindow(): " + e + "<br>");
+            }
+        }
+
+        //START=================================================================
+            (function fixWindowScreenLocIssue() {
+                Object.defineProperty(window, "screenX", {
+                    get: function () {
+                        return parseInt(window.KeyboardMaestro?.Calculate("WINDOW(Left)")
+                            ?? window.screenX);
+                    }
+                });
+
+                Object.defineProperty(window, "screenY", {
+                    get: function () {
+                        return parseInt(window.KeyboardMaestro?.Calculate("WINDOW(Top)")
+                            ?? window.screenY);
+                    }
+                });
+            })();
+        //END=================================================================
+
+            // Save the window position to a KM variable.
+            function saveWindowPosition() {
+                var newPosition = window.screenX + ',' + window.screenY;
+                window.KeyboardMaestro.SetVariable('dspWindowPosition', newPosition);
+            }
+
+    
+        // Make sure we store our position before submitting the form.
+        function submitWindow(result) {
+            saveWindowPosition();
+            window.KeyboardMaestro.Submit(result);
+        }
+
+        // Make sure we store our position before canceling the form.
+        // NOTE: This does NOT get called when the user uses the Escape
+        // key to exit the form.
+        function cancelWindow(result) {
+            saveWindowPosition();
+            window.KeyboardMaestro.Cancel(result);
+        }
+
+        // Register an event listener to save the window position before it is closed.
+        window.addEventListener('beforeunload', saveWindowPosition);
+
+        // Tabs
+        function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+    </script>
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'tab1')">Results</button>
+        <!-- <button class="tablinks" onclick="openTab(event, 'tab2')">Tag Map</button>
+        <button class="tablinks" onclick="openTab(event, 'tab3')">Subatomic</button>
+        <button class="tablinks" onclick="openTab(event, 'tab4')">BkLk   of BkLk</button> -->
+        </div>
+
+    <div id="tab1" class="tabcontent">
+        <div id="TablePlaceHolder">
+            <script>
+                document.getElementById("TablePlaceHolder").innerHTML = window.KeyboardMaestro.GetVariable("theTable");
+            </script>
+        </div>
+    </div>
+
+    <!-- <div id="tab2" class="tabcontent">
+        <div id="TagMapPlaceHolder">
+            <script>
+                document.getElementById("TagMapPlaceHolder").innerHTML = window.KeyboardMaestro.GetVariable("theTagMap");
+            </script>
+        </div>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+        <div id="SubatomicPlaceHolder">
+            <script>
+                document.getElementById("SubatomicPlaceHolder").innerHTML = window.KeyboardMaestro.GetVariable("theSubatomic");
+            </script>
+        </div>
+    </div>
+
+    <div id="tab4" class="tabcontent">
+        <div id="SecondTierPlaceHolder">
+            <script>
+                document.getElementById("SecondTierPlaceHolder").innerHTML = window.KeyboardMaestro.GetVariable("theSecondTier");
+            </script>
+        </div>
+    </div> -->
+
+    <div id="divButtons" style="text-align:center; margin-top: 10px;">
+        <input type="button" value="Cancel" onclick="cancelWindow('Cancel')">
+        <input type="button" value="OK" onclick="submitWindow()">
+    </div>
+</body>
+</html>

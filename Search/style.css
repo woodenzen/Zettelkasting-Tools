@@ -1,0 +1,111 @@
+/* set body color to #131a25*/
+
+body {
+    background-color: #50a7ee;
+}
+
+table.dataframe th {
+    text-align: center;
+}
+
+table.dataframe {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+table.dataframe th,
+table.dataframe td {
+    border: 1px solid black;
+}
+
+table.dataframe thead th {
+    border-bottom: 2px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+/* Style tab1 */
+#tab1 {
+    text-align: center;
+    
+}
+
+#tab1 td:first-child {
+    text-align: right;
+}
+/* Style tab2 */
+#tab2 table {
+    width: auto;
+}
+
+#tab2 td:first-child {
+    text-align: right;
+    width: fit-content;
+}
+
+/* Style tab3 */
+#tab3 table {
+    width: 100%;
+}
+
+#tab3 td:first-child {
+    text-align: right;
+    width: max-content;
+}
+
+#tab3 td:last-child {
+    text-align: left;
+}
+
+table.dataframe tbody tr:nth-child(odd) {
+    background-color: #9cc2e8;
+}
+
+table.dataframe tbody tr:nth-child(even) {
+    background-color: #93a4b2;
+}
+
+table.dataframe th,
+table.dataframe td {
+    font-family: SFMono-Regular, monospace;
+    font-size: 12pt;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

@@ -41,7 +41,7 @@ def reformat_first_line(text):
     """
     lines = text.split('\n')
     if lines:
-        lines[0] = "----\n"
+        lines[0] = "----"
     return '\n'.join(lines)
 
 def prepend_to_lines(text, prefix, starts_with):

@@ -31,7 +31,7 @@ def remove_lines_containing(text, substring):
 
 def reformat_first_line(text):
     """
-    Reformat the first line of the text by replacing it with "----\n#### Today's Schedule\n".
+    Reformat the first line of the text by replacing it with "----".
     
     Args:
         text (str): The input text.

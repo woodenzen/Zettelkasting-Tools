@@ -28,7 +28,6 @@ def search_term_in_zettelkasten(terms):
         if any('#collection-list' in line for line in lines):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
-                found = True
                 print(f"## Search results for '{' and '.join(terms)}' in the list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")

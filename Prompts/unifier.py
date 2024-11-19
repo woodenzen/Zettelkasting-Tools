@@ -4,6 +4,16 @@ from pathlib import Path
 
 
 def search_term_in_directories(directories, terms):
+    """
+    Search for terms in markdown files within specified directories.
+
+    Args:
+        directories (list): A list of directory paths to search in.
+        terms (list): A list of search terms.
+
+    Returns:
+        None
+    """
     found = False
     for directory in directories:
         p = Path(directory)
@@ -12,15 +22,22 @@ def search_term_in_directories(directories, terms):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
                 found = True
-                print(f"## Search results for '{' and '.join(terms)}' in the file containing the list of {file_path.stem}.\n")
+                print(f"## Search results for '{' and '.join(terms)}' in the file containing the list of {file_path.stem} phrases.\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")
                 print("\n")
-    if not found:
-        print(f"### No results were found for '{' and '.join(terms)}' in the Lists.\n")
 
 def search_term_in_zettelkasten(terms):
+    """
+    Search for terms in markdown files within the Zettelkasten directory.
+
+    Args:
+        terms (list): A list of search terms.
+
+    Returns:
+        None
+    """
     p = Path('/Users/will/Dropbox/zettelkasten/')
     found = False
     for file_path in p.glob('*.md'):
@@ -28,15 +45,22 @@ def search_term_in_zettelkasten(terms):
         if any('#collection-list' in line for line in lines):
             matching_lines = [line for line in lines if all(term.lower() in line.lower() for term in terms)]  # check if all terms are in line
             if matching_lines:
-                print(f"## Search results for '{' and '.join(terms)}' in the list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
+                print(f"## Search results for '{' and '.join(terms)}' with the tag #collection-list\n[{file_path.stem[:-13]}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
                 for x in matching_lines:
                     x = x.replace("\n", "")
                     print(f"{x}")
                 print("\n")
-    if not found:
-        print(f"### No results were found for '{' and '.join(terms)}' in the Zettelkasten.\n")
 
 def beautiful_language_search(terms):
+    """
+    Search for terms in lines following '#beautiful-language' tags in markdown files within the Zettelkasten directory.
+
+    Args:
+        terms (list): A list of search terms.
+
+    Returns:
+        dict: A dictionary containing the search results.
+    """
     p = Path('/Users/will/Dropbox/zettelkasten/')
     results = {}  # define an empty dictionary to store the results
     for file_path in p.glob('*.md'):
@@ -54,7 +78,7 @@ def beautiful_language_search(terms):
     # print the results
     if results:
         for file, lines in results.items():
-            print(f"## Search results for '{' and '.join(terms)}' in the note\n[{file}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
+            print(f"## Search results for '{' and '.join(terms)}' in the note with the tag #beautiful-language.\n[{file}](thearchive://match/›[[{file_path.stem[-12:]}]]).\n")
             for line in lines:
                 print(f"{line}")
             print("\n")

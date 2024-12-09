@@ -1,0 +1,1 @@
+ln "$KMVAR_path" /Users/will/Dropbox/Projects/blog/test123.md

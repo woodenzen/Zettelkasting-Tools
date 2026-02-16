@@ -1,0 +1,13 @@
+2024-12-29 17:12:59,345 - ERROR - No file name provided in 'KMVAR_FileName'
+2024-12-29 17:14:28,186 - ERROR - Error creating hard link: [Errno 2] No such file or directory: 'Deep Think Retreat 202412151310.md' -> '/Users/will/Dropbox/Projects/blog/Deep Think Retreat 202412151310.md'
+2024-12-29 17:23:33,120 - ERROR - Error creating hard link: link: src should be string, bytes or os.PathLike, not tuple
+2024-12-29 17:27:56,149 - ERROR - No file name provided in 'KMVAR_FileName'
+2024-12-29 17:30:26,277 - INFO - Source file: Deep Think Retreat 202412151310.md
+2024-12-29 17:30:26,278 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Deep Think Retreat 202412151310.md
+2024-12-29 17:30:26,278 - ERROR - Error creating hard link: [Errno 2] No such file or directory: 'Deep Think Retreat 202412151310.md' -> '/Users/will/Dropbox/Projects/blog/Deep Think Retreat 202412151310.md'
+2024-12-29 17:36:38,468 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Deep Think Retreat 202412151310.md
+2024-12-29 17:36:38,468 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Deep Think Retreat 202412151310.md
+2024-12-29 17:36:38,469 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Deep Think Retreat 202412151310.md
+2024-12-29 17:38:10,736 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Mary Howe Poem - Government 202412280445.md
+2024-12-29 17:38:10,737 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Mary Howe Poem - Government 202412280445.md
+2024-12-29 17:38:10,738 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Mary Howe Poem - Government 202412280445.md

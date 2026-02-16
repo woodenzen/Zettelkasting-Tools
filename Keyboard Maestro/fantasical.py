@@ -72,7 +72,7 @@ if __name__ == "__main__":
         # Reformat the first line
         cleaned_text = reformat_first_line(cleaned_text)
         # Prepend "- " to lines starting with "[ ] "
-        cleaned_text = prepend_to_lines(cleaned_text, "- ", "[ ] ")
+        # cleaned_text = prepend_to_lines(cleaned_text, "- ", "[ ] ")
         print(cleaned_text)
     else:
         print("No input text found in 'KMVAR_schedule'")

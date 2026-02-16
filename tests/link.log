@@ -1,0 +1,102 @@
+2025-01-03 07:46:37,703 - INFO - Source file: /Users/will/Dropbox/zettelkasten/SACHACHUA.COM.md
+2025-01-03 07:46:37,708 - INFO - Target file: /Users/will/Dropbox/Projects/blog/SACHACHUA.COM.md
+2025-01-03 07:46:37,711 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/SACHACHUA.COM.md' -> '/Users/will/Dropbox/Projects/blog/SACHACHUA.COM.md'
+2025-01-03 07:47:21,015 - INFO - Source file: /Users/will/Dropbox/zettelkasten/SACHACHUA.COM.md
+2025-01-03 07:47:21,016 - INFO - Target file: /Users/will/Dropbox/Projects/blog/SACHACHUA.COM.md
+2025-01-03 07:47:21,016 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/SACHACHUA.COM.md' -> '/Users/will/Dropbox/Projects/blog/SACHACHUA.COM.md'
+2025-01-03 07:50:09,072 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Following the Butterflies of Interest 202501030632.md.md
+2025-01-03 07:50:09,072 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md.md
+2025-01-03 07:50:09,073 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/Following the Butterflies of Interest 202501030632.md.md' -> '/Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md.md'
+2025-01-03 07:51:55,642 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:51:55,642 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:51:55,643 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:54:01,357 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:54:01,358 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:54:01,358 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:55:40,487 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:55:40,488 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-03 07:55:40,488 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Following the Butterflies of Interest 202501030632.md
+2025-01-05 08:19:16,531 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life
+2025-01-05 08:19:16,532 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life
+2025-01-05 08:19:16,532 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/How Writing Reimagines Life' -> '/Users/will/Dropbox/Projects/blog/How Writing Reimagines Life'
+2025-01-05 08:22:11,366 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life
+2025-01-05 08:22:11,366 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life
+2025-01-05 08:22:11,366 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/How Writing Reimagines Life' -> '/Users/will/Dropbox/Projects/blog/How Writing Reimagines Life'
+2025-01-05 08:27:42,351 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life.md
+2025-01-05 08:27:42,351 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life.md
+2025-01-05 08:27:42,351 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/How Writing Reimagines Life.md' -> '/Users/will/Dropbox/Projects/blog/How Writing Reimagines Life.md'
+2025-01-05 08:29:10,404 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:29:10,404 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:29:10,405 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:39:49,324 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:39:49,325 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:39:49,326 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:41:51,393 - INFO - Source file: /Users/will/Dropbox/zettelkasten/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:41:51,394 - INFO - Target file: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-05 08:41:51,395 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/How Writing Reimagines Life 202501040530.md
+2025-01-09 06:08:27,507 - INFO - Source file: /Users/will/Dropbox/zettelkasten/blog
+2025-01-09 06:08:27,508 - INFO - Target file: /Users/will/Dropbox/Projects/blog/blog
+2025-01-09 06:08:27,508 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/blog' -> '/Users/will/Dropbox/Projects/blog/blog'
+2025-01-09 06:09:26,645 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Mindfulness and Inactivity Enhances Cooking 202501090607.md
+2025-01-09 06:09:26,646 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Mindfulness and Inactivity Enhances Cooking 202501090607.md
+2025-01-09 06:09:26,647 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Mindfulness and Inactivity Enhances Cooking 202501090607.md
+2025-01-20 09:20:48,332 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Noticing Dysregulation in my Relationships 202501200915.md
+2025-01-20 09:20:48,333 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Noticing Dysregulation in my Relationships 202501200915.md
+2025-01-20 09:20:48,333 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Noticing Dysregulation in my Relationships 202501200915.md
+2025-01-22 08:37:25,127 - INFO - Source file: /Users/will/Dropbox/zettelkasten/hoosing composure over confrontation, recognizing that engaging in unproductive arguments undermines self-control and perpetuates chaos.
+2025-01-22 08:37:25,129 - INFO - Target file: /Users/will/Dropbox/Projects/blog/hoosing composure over confrontation, recognizing that engaging in unproductive arguments undermines self-control and perpetuates chaos.
+2025-01-22 08:37:25,129 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/hoosing composure over confrontation, recognizing that engaging in unproductive arguments undermines self-control and perpetuates chaos.' -> '/Users/will/Dropbox/Projects/blog/hoosing composure over confrontation, recognizing that engaging in unproductive arguments undermines self-control and perpetuates chaos.'
+2025-01-22 08:38:19,272 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Never Argue with a Fool 202501212013.md
+2025-01-22 08:38:19,273 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Never Argue with a Fool 202501212013.md
+2025-01-22 08:38:19,273 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Never Argue with a Fool 202501212013.md
+2025-01-24 05:27:49,738 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Where Has All the Silence Gone 202501220509.md
+2025-01-24 05:27:49,740 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Where Has All the Silence Gone 202501220509.md
+2025-01-24 05:27:49,740 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Where Has All the Silence Gone 202501220509.md
+2025-01-24 06:52:07,821 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Where Has All the Silence Gone 202501220509.md
+2025-01-24 06:52:07,822 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Where Has All the Silence Gone 202501220509.md
+2025-01-24 06:52:07,822 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Where Has All the Silence Gone 202501220509.md
+2025-02-08 08:38:16,589 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Nobody Tells Beginners 202502080833.md
+2025-02-08 08:38:16,590 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Nobody Tells Beginners 202502080833.md
+2025-02-08 08:38:16,590 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Nobody Tells Beginners 202502080833.md
+2025-03-23 09:27:46,926 - INFO - Source file: /Users/will/Dropbox/zettelkasten/When people get old 202503230924.md
+2025-03-23 09:27:46,928 - INFO - Target file: /Users/will/Dropbox/Projects/blog/When people get old 202503230924.md
+2025-03-23 09:27:46,929 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/When people get old 202503230924.md
+2025-03-25 05:42:50,032 - INFO - Source file: /Users/will/Dropbox/zettelkasten/What is kindness in the face of eternal life? 202503250539.md
+2025-03-25 05:42:50,037 - INFO - Target file: /Users/will/Dropbox/Projects/blog/What is kindness in the face of eternal life? 202503250539.md
+2025-03-25 05:42:50,038 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/What is kindness in the face of eternal life? 202503250539.md
+2025-05-25 05:34:47,554 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Changing Behavior 202505250530.md
+2025-05-25 05:34:47,555 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Changing Behavior 202505250530.md
+2025-05-25 05:34:47,556 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Changing Behavior 202505250530.md
+2025-05-26 07:12:10,374 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Gifted Rain 202505260703.md
+2025-05-26 07:12:10,375 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Gifted Rain 202505260703.md
+2025-05-26 07:12:10,376 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Gifted Rain 202505260703.md
+2025-06-04 05:46:47,094 - INFO - Source file: /Users/will/Dropbox/zettelkasten/The Inbox Mindset 202506040537.md
+2025-06-04 05:46:47,096 - INFO - Target file: /Users/will/Dropbox/Projects/blog/The Inbox Mindset 202506040537.md
+2025-06-04 05:46:47,097 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/The Inbox Mindset 202506040537.md
+2025-07-22 08:25:46,986 - INFO - Source file: /Users/will/Dropbox/zettelkasten/LLM Dialogues Toward Inner Citizenship 202507220619.md
+2025-07-22 08:25:46,988 - INFO - Target file: /Users/will/Dropbox/Projects/blog/LLM Dialogues Toward Inner Citizenship 202507220619.md
+2025-07-22 08:25:46,988 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/LLM Dialogues Toward Inner Citizenship 202507220619.md
+2025-07-23 12:02:43,388 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Watching the watcher 202507230700.md
+2025-07-23 12:02:43,390 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Watching the watcher 202507230700.md
+2025-07-23 12:02:43,390 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Watching the watcher 202507230700.md
+2026-01-01 16:09:13,731 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Books I Read in 2025 202601011602.md
+2026-01-01 16:09:13,732 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Books I Read in 2025 202601011602.md
+2026-01-01 16:09:13,732 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Books I Read in 2025 202601011602.md
+2026-01-13 09:18:37,973 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Now Page Template 202509081917.md
+2026-01-13 09:18:37,974 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Now Page Template 202509081917.md
+2026-01-13 09:18:37,975 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Now Page Template 202509081917.md
+2026-01-14 16:19:42,543 - INFO - Source file: /Users/will/Dropbox/zettelkasten/The Cooking Revolution 202601141614.md
+2026-01-14 16:19:42,546 - INFO - Target file: /Users/will/Dropbox/Projects/blog/The Cooking Revolution 202601141614.md
+2026-01-14 16:19:42,546 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/The Cooking Revolution 202601141614.md
+2026-01-14 16:21:04,185 - INFO - Source file: /Users/will/Dropbox/zettelkasten/The Cooking Revolution.md
+2026-01-14 16:21:04,186 - INFO - Target file: /Users/will/Dropbox/Projects/blog/The Cooking Revolution.md
+2026-01-14 16:21:04,186 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/The Cooking Revolution.md
+2026-01-14 16:37:01,122 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Mindfulness and Inactivity Enhances Cooking.md
+2026-01-14 16:37:01,126 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Mindfulness and Inactivity Enhances Cooking.md
+2026-01-14 16:37:01,127 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Mindfulness and Inactivity Enhances Cooking.md
+2026-01-23 19:45:55,159 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Gift of the gods 202601230616.md
+2026-01-23 19:45:55,161 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Gift of the gods 202601230616.md
+2026-01-23 19:45:55,162 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Gift of the gods 202601230616.md
+2026-01-28 06:43:32,538 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Waiting, waiting.md
+2026-01-28 06:43:32,540 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Waiting, waiting.md
+2026-01-28 06:43:32,541 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Waiting, waiting.md

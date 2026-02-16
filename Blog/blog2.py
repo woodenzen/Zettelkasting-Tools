@@ -39,12 +39,13 @@ def create_hard_link(source, target_directory):
     """
     # Get the file name from the source file path
     file_name = os.path.basename(source)
+    # Remove the timestamp from the file name
+    base_name = file_name.rsplit(' ', 1)[0] + '.md'
     # Construct the target file path
-    target_file = os.path.join(target_directory, file_name)
-    source_file = os.path.join(zettelkasten, file_name)
+    target_file = os.path.join(target_directory, base_name)
     
     # Debugging statements to print the paths
-    logging.info(f"Source file: {source_file}")
+    logging.info(f"Source file: {source}")
     logging.info(f"Target file: {target_file}")
     
     try:

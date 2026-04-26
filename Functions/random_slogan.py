@@ -9,6 +9,9 @@ metta = metta.replace("\xa0", " ")
 question = random.choice(open("/Users/will/Dropbox/Projects/Capture DB/Open Ended Questions.md").readlines())
 question = question.replace("\xa0", " ")
 
+mindfulness = random.choice(open("/Users/will/Dropbox/Projects/Capture DB/Mindfulness.md").readlines())
+mindfulness = mindfulness.replace("\xa0", " ")
+
 print(f"""
 ## Super Slogan
 {ss}
@@ -16,6 +19,7 @@ print(f"""
 - {metta} 
 ## Open-Ended Question
 {question} 
-
+## Mindfulness
+{mindfulness}   
 """)
 print('\n\n\n')

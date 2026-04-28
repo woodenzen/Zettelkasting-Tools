@@ -47,14 +47,16 @@ def create_hard_link(source, target_directory):
     base_name = file_name.rsplit(' ', 1)[0] + '.md'
     # Construct the target file path
     target_file = os.path.join(target_directory, base_name)
+    # Construct the full source path by joining with zettelkasten directory
+    source_file = os.path.join(zettelkasten, file_name)
     
     # Debugging statements to print the paths
-    logging.info(f"Source file: {source}")
+    logging.info(f"Source file: {source_file}")
     logging.info(f"Target file: {target_file}")
     
     try:
         # Create the hard link
-        os.link(source, target_file)
+        os.link(source_file, target_file)
         logging.info(f"Hard link created: {target_file}")
     except FileExistsError:
         logging.warning(f"Hard link already exists: {target_file}")

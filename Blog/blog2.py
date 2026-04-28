@@ -24,6 +24,9 @@ zettelkasten = TheArchivePath()
 blog = "/Users/will/Dropbox/Projects/blog/"
 log_file = "/Users/will/Dropbox/Projects/Zettelkasting Tools/Blog/sync.log"
 
+# Ensure log directory exists
+os.makedirs(os.path.dirname(log_file), exist_ok=True)
+
 # Configure logging to file and console
 logging.basicConfig(
     level=logging.INFO,
@@ -45,6 +48,9 @@ def create_hard_link(source, target_directory):
     Returns:
         None
     """
+    # Ensure target directory exists
+    os.makedirs(target_directory, exist_ok=True)
+    
     # Get the file name from the source file path
     file_name = os.path.basename(source)
     # Remove the timestamp from the file name
@@ -110,13 +116,18 @@ def sync_to_github(blog_dir):
         logging.error(f"Error syncing to GitHub: {e}")
 
 if __name__ == "__main__":
-    # Retrieve the file name from the environment variable set by Keyboard Maestro
-    source = os.environ.get('KMVAR_baseName')
-    
-    if source:
-        # Create the hard link in the blog directory
-        create_hard_link(source, blog)
-        # Sync the blog directory to GitHub
-        sync_to_github(blog)
-    else:
-        logging.error("No file name provided in 'KMVAR_baseName'")
+    try:
+        # Retrieve the file name from the environment variable set by Keyboard Maestro
+        source = os.environ.get('KMVAR_baseName')
+        
+        if source:
+            logging.info(f"Received file: {source}")
+            # Create the hard link in the blog directory
+            create_hard_link(source, blog)
+            # Sync the blog directory to GitHub
+            sync_to_github(blog)
+        else:
+            logging.error("No file name provided in 'KMVAR_baseName'")
+    except Exception as e:
+        # Last resort error capture
+        print(f"Fatal error: {e}")

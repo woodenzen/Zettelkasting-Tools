@@ -61,6 +61,8 @@ if __name__ == "__main__":
     source = os.environ.get('KMVAR_baseName')
     
     if source:
+        # Strip any trailing whitespace/newlines from the source
+        source = source.strip()
         # Create the hard link in the blog directory
         create_hard_link(source, blog)
     else:

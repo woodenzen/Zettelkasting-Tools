@@ -1,4 +1,10 @@
 import os
+import logging
+
+log_log = "/Users/will/Dropbox/Projects/Zettelkasting Tools/tests/link.log"
+
+# Configure logging to file
+logging.basicConfig(filename=log_log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def create_hard_link(source_file, target_directory):
     """
@@ -19,28 +25,28 @@ def create_hard_link(source_file, target_directory):
     try:
         # Create the hard link
         os.link(source_file, target_file)
-        print(f"Hard link created: {target_file}")
+        logging.info(f"Hard link created: {target_file}")
     except FileExistsError:
-        print(f"Hard link already exists: {target_file}")
+        logging.warning(f"Hard link already exists: {target_file}")
     except Exception as e:
-        print(f"Error creating hard link: {e}")
+        logging.error(f"Error creating hard link: {e}")
 
 if __name__ == "__main__":
     # Print all environment variables for debugging
-    print("Environment Variables:")
+    logging.info("Environment Variables:")
     for key, value in os.environ.items():
-        print(f"{key}: {value}")
+        logging.debug(f"{key}: {value}")
     
     # Retrieve the file name from the environment variable set by Keyboard Maestro
     # source_file = os.environ.get("KMVAR_fileName")
     source_file = "/Users/will/Dropbox/zettelkasten/Pitch Cover Letter 202411231914.md"
     
     if source_file:
-        print(f"KMVAR_FileName: {source_file}")
+        logging.info(f"Source file: {source_file}")
         # Define the target directory
         target_directory = '/Users/will/Dropbox/Projects/blog'
         # Create the hard link
         create_hard_link(source_file, target_directory)
     else:
-        print("No file name provided in 'KMVAR_FileName'")
+        logging.error("No file name provided in 'KMVAR_FileName'")
         exit(1)

@@ -140,3 +140,8 @@
 2026-04-28 13:45:20,804 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life 202604280651.md
 
 2026-04-28 13:45:20,804 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md\n' -> '/Users/will/Dropbox/Projects/blog/Examining Life 202604280651.md\n'
+2026-04-28 13:58:21,597 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+
+2026-04-28 13:58:21,598 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life 202604280651.md
+
+2026-04-28 13:58:21,598 - ERROR - Error creating hard link: [Errno 2] No such file or directory: '/Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md\n' -> '/Users/will/Dropbox/Projects/blog/Examining Life 202604280651.md\n'

@@ -1,5 +1,6 @@
 import os
 import logging
+import subprocess
 from urllib.parse import urlparse
 from plistlib import load
 
@@ -50,12 +51,45 @@ def create_hard_link(source, target_directory):
     
     try:
         # Create the hard link
-        os.link(source_file, target_file)
+        os.link(source, target_file)
         logging.info(f"Hard link created: {target_file}")
     except FileExistsError:
         logging.warning(f"Hard link already exists: {target_file}")
     except Exception as e:
         logging.error(f"Error creating hard link: {e}")
+
+
+def sync_to_github(blog_dir):
+    """
+    Sync the blog directory to GitHub.
+
+    Args:
+        blog_dir (str): The path to the blog directory.
+
+    Returns:
+        None
+    """
+    try:
+        # Run git status
+        subprocess.run(['git', 'status'], cwd=blog_dir, check=True, capture_output=True, text=True)
+        logging.info("Git status checked")
+
+        # Run git add .
+        subprocess.run(['git', 'add', '.'], cwd=blog_dir, check=True, capture_output=True, text=True)
+        logging.info("Files staged")
+
+        # Run git commit
+        subprocess.run(['git', 'commit', '-m', 'Add new notes.'], cwd=blog_dir, check=True, capture_output=True, text=True)
+        logging.info("Changes committed")
+
+        # Run git push
+        subprocess.run(['git', 'push'], cwd=blog_dir, check=True, capture_output=True, text=True)
+        logging.info("Changes pushed to GitHub")
+
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Git command failed: {e}")
+    except Exception as e:
+        logging.error(f"Error syncing to GitHub: {e}")
 
 if __name__ == "__main__":
     # Retrieve the file name from the environment variable set by Keyboard Maestro
@@ -64,5 +98,7 @@ if __name__ == "__main__":
     if source:
         # Create the hard link in the blog directory
         create_hard_link(source, blog)
+        # Sync the blog directory to GitHub
+        sync_to_github(blog)
     else:
         logging.error("No file name provided in 'KMVAR_baseName'")

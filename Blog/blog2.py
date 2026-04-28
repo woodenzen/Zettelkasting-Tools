@@ -22,20 +22,10 @@ def TheArchivePath():
 
 zettelkasten = TheArchivePath()
 blog = "/Users/will/Dropbox/Projects/blog/"
-log_file = "/Users/will/Dropbox/Projects/Zettelkasting Tools/Blog/sync.log"
+log_log = "/Users/will/Dropbox/Projects/Zettelkasting Tools/tests/link.log"
 
-# Ensure log directory exists
-os.makedirs(os.path.dirname(log_file), exist_ok=True)
-
-# Configure logging to file and console
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(log_file),
-        logging.StreamHandler()
-    ]
-)
+# Configure logging to file
+logging.basicConfig(filename=log_log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def create_hard_link(source, target_directory):
     """
@@ -82,6 +72,14 @@ def sync_to_github(blog_dir):
     Returns:
         None
     """
+    logging.info(f"Starting GitHub sync for: {blog_dir}")
+    
+    # Check if directory is a git repository
+    git_dir = os.path.join(blog_dir, '.git')
+    if not os.path.isdir(git_dir):
+        logging.error(f"Not a git repository: {blog_dir}")
+        return
+    
     try:
         # Run git status
         result = subprocess.run(
@@ -117,17 +115,31 @@ def sync_to_github(blog_dir):
 
 if __name__ == "__main__":
     try:
+        logging.info("=== Script started ===")
+        
         # Retrieve the file name from the environment variable set by Keyboard Maestro
         source = os.environ.get('KMVAR_baseName')
         
+        logging.info(f"KMVAR_baseName raw: {repr(source)}")
+        
         if source:
+            # Strip any trailing whitespace/newlines
+            source = source.strip()
             logging.info(f"Received file: {source}")
             # Create the hard link in the blog directory
             create_hard_link(source, blog)
             # Sync the blog directory to GitHub
+            logging.info("Calling sync_to_github...")
             sync_to_github(blog)
+            logging.info("=== Script completed ===")
         else:
             logging.error("No file name provided in 'KMVAR_baseName'")
+            logging.error("Environment variables received:")
+            for key, value in os.environ.items():
+                if 'KMVAR' in key:
+                    logging.error(f"  {key}: {repr(value)}")
     except Exception as e:
         # Last resort error capture
-        print(f"Fatal error: {e}")
+        logging.error(f"Fatal error: {e}")
+        import traceback
+        logging.error(traceback.format_exc())

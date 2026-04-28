@@ -22,9 +22,17 @@ def TheArchivePath():
 
 zettelkasten = TheArchivePath()
 blog = "/Users/will/Dropbox/Projects/blog/"
+log_file = "/Users/will/Dropbox/Projects/Zettelkasting Tools/Blog/sync.log"
 
-# Configure logging to console
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging to file and console
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_file),
+        logging.StreamHandler()
+    ]
+)
 
 def create_hard_link(source, target_directory):
     """

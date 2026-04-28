@@ -22,7 +22,7 @@ def TheArchivePath():
 
 zettelkasten = TheArchivePath()
 blog = "/Users/will/Dropbox/Projects/blog/"
-log_log = "/Users/will/Dropbox/Projects/Zettelkasting Tools/tests/link.log"
+log_log = "/Users/will/Dropbox/Projects/Zettelkasting Tools/Blog/link.log"
 
 # Configure logging to file
 logging.basicConfig(filename=log_log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

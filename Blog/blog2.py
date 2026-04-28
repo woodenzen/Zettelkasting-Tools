@@ -22,10 +22,9 @@ def TheArchivePath():
 
 zettelkasten = TheArchivePath()
 blog = "/Users/will/Dropbox/Projects/blog/"
-log_log = "/Users/will/Dropbox/Projects/Zettelkasting Tools/tests/link.log"
 
-# Configure logging
-logging.basicConfig(filename=log_log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging to console
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def create_hard_link(source, target_directory):
     """
@@ -71,23 +70,34 @@ def sync_to_github(blog_dir):
     """
     try:
         # Run git status
-        subprocess.run(['git', 'status'], cwd=blog_dir, check=True, capture_output=True, text=True)
-        logging.info("Git status checked")
+        result = subprocess.run(
+            ['git', 'status'], cwd=blog_dir, capture_output=True, text=True
+        )
+        logging.info(f"Git status: {result.stdout.strip()}")
 
         # Run git add .
-        subprocess.run(['git', 'add', '.'], cwd=blog_dir, check=True, capture_output=True, text=True)
+        subprocess.run(['git', 'add', '.'], cwd=blog_dir, capture_output=True, text=True)
         logging.info("Files staged")
 
-        # Run git commit
-        subprocess.run(['git', 'commit', '-m', 'Add new notes.'], cwd=blog_dir, check=True, capture_output=True, text=True)
-        logging.info("Changes committed")
+        # Run git commit (don't fail if nothing to commit)
+        result = subprocess.run(
+            ['git', 'commit', '-m', 'Add new notes.'], 
+            cwd=blog_dir, capture_output=True, text=True
+        )
+        if result.returncode == 0:
+            logging.info("Changes committed")
+        else:
+            logging.info(f"Commit skipped: {result.stdout.strip()}")
 
         # Run git push
-        subprocess.run(['git', 'push'], cwd=blog_dir, check=True, capture_output=True, text=True)
-        logging.info("Changes pushed to GitHub")
+        result = subprocess.run(
+            ['git', 'push'], cwd=blog_dir, capture_output=True, text=True
+        )
+        if result.returncode == 0:
+            logging.info("Changes pushed to GitHub")
+        else:
+            logging.error(f"Push failed: {result.stderr}")
 
-    except subprocess.CalledProcessError as e:
-        logging.error(f"Git command failed: {e}")
     except Exception as e:
         logging.error(f"Error syncing to GitHub: {e}")
 

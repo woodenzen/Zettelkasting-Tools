@@ -1,6 +1,7 @@
 import os
 import logging
 import subprocess
+import shutil
 from urllib.parse import urlparse
 from plistlib import load
 
@@ -32,11 +33,11 @@ def create_hard_link(source, target_directory):
     Create a hard link for the source file in the target directory.
 
     Args:
-        source_file (str): The path to the source file.
+        source (str): The source file name.
         target_directory (str): The path to the target directory.
 
     Returns:
-        None
+        str: The path to the source Markdown file.
     """
     # Ensure target directory exists
     os.makedirs(target_directory, exist_ok=True)
@@ -62,6 +63,64 @@ def create_hard_link(source, target_directory):
         logging.warning(f"Hard link already exists: {target_file}")
     except Exception as e:
         logging.error(f"Error creating hard link: {e}")
+    return source_file
+
+
+def copy_media_files(source_file, target_directory):
+    """
+    Copy media files referenced by the source Markdown file to the blog media directory.
+
+    Args:
+        source_file (str): The path to the source Markdown file.
+        target_directory (str): The path to the blog directory.
+
+    Returns:
+        None
+    """
+    media_prefix = "![](media/"
+    source_directory = os.path.dirname(source_file)
+    target_media_directory = os.path.join(target_directory, "media")
+    copied_count = 0
+
+    logging.info(f"Scanning for media references in: {source_file}")
+
+    try:
+        with open(source_file, "r", encoding="utf-8") as fp:
+            for line_number, line in enumerate(fp, start=1):
+                line = line.rstrip()
+                if not line.startswith(media_prefix):
+                    continue
+
+                media_path = line[len("![]("):].split(")", 1)[0]
+                normalized_media_path = os.path.normpath(media_path)
+
+                if (
+                    os.path.isabs(normalized_media_path)
+                    or normalized_media_path.startswith("..")
+                    or not normalized_media_path.startswith(f"media{os.sep}")
+                ):
+                    logging.warning(
+                        f"Skipping unsafe media path on line {line_number}: {media_path}"
+                    )
+                    continue
+
+                source_media_file = os.path.join(source_directory, normalized_media_path)
+                target_media_file = os.path.join(target_directory, normalized_media_path)
+
+                if not os.path.isfile(source_media_file):
+                    logging.error(
+                        f"Media file not found on line {line_number}: {source_media_file}"
+                    )
+                    continue
+
+                os.makedirs(os.path.dirname(target_media_file), exist_ok=True)
+                shutil.copy2(source_media_file, target_media_file)
+                copied_count += 1
+                logging.info(f"Copied media file: {source_media_file} -> {target_media_file}")
+
+        logging.info(f"Media scan complete. Copied {copied_count} file(s) to {target_media_directory}")
+    except Exception as e:
+        logging.error(f"Error copying media files from {source_file}: {e}")
 
 
 def sync_to_github(blog_dir):
@@ -129,7 +188,9 @@ if __name__ == "__main__":
             source = source.strip()
             logging.info(f"Received file: {source}")
             # Create the hard link in the blog directory
-            create_hard_link(source, blog)
+            source_file = create_hard_link(source, blog)
+            # Copy media referenced in the source file before syncing to GitHub
+            copy_media_files(source_file, blog)
             # Sync the blog directory to GitHub
             logging.info("Calling sync_to_github...")
             sync_to_github(blog)

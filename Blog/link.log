@@ -1,0 +1,106 @@
+2026-04-28 15:09:34,365 - INFO - === Script started ===
+2026-04-28 15:09:34,366 - INFO - KMVAR_baseName raw: 'Examining Life 202604280651.md\n'
+2026-04-28 15:09:34,366 - INFO - Received file: Examining Life 202604280651.md
+2026-04-28 15:09:34,366 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 15:09:34,366 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 15:09:34,366 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 15:09:34,366 - INFO - Calling sync_to_github...
+2026-04-28 15:09:34,366 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-28 15:09:34,397 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Examining Life 202604280651.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-04-28 15:09:34,420 - INFO - Files staged
+2026-04-28 15:09:34,470 - INFO - Changes committed
+2026-04-28 15:09:36,013 - INFO - Changes pushed to GitHub
+2026-04-28 15:09:36,014 - INFO - === Script completed ===
+2026-04-28 17:04:24,196 - INFO - === Script started ===
+2026-04-28 17:04:24,197 - INFO - KMVAR_baseName raw: 'Examining Life 202604280651.md\n'
+2026-04-28 17:04:24,197 - INFO - Received file: Examining Life 202604280651.md
+2026-04-28 17:04:24,197 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 17:04:24,197 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:04:24,197 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:04:24,197 - INFO - Calling sync_to_github...
+2026-04-28 17:04:24,197 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-28 17:04:24,284 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Examining Life.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-04-28 17:04:24,312 - INFO - Files staged
+2026-04-28 17:04:24,370 - INFO - Changes committed
+2026-04-28 17:04:25,913 - INFO - Changes pushed to GitHub
+2026-04-28 17:04:25,913 - INFO - === Script completed ===
+2026-04-28 17:42:46,401 - INFO - === Script started ===
+2026-04-28 17:42:46,403 - INFO - KMVAR_baseName raw: 'Examining Life 202604280651.md\n'
+2026-04-28 17:42:46,403 - INFO - Received file: Examining Life 202604280651.md
+2026-04-28 17:42:46,403 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 17:42:46,403 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:42:46,403 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:42:46,403 - INFO - Calling sync_to_github...
+2026-04-28 17:42:46,403 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-28 17:42:46,464 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Examining Life.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-04-28 17:42:46,492 - INFO - Files staged
+2026-04-28 17:42:46,554 - INFO - Changes committed
+2026-04-28 17:42:48,244 - INFO - Changes pushed to GitHub
+2026-04-28 17:42:48,244 - INFO - === Script completed ===
+2026-04-28 17:51:46,873 - INFO - === Script started ===
+2026-04-28 17:51:46,877 - INFO - KMVAR_baseName raw: 'Examining Life 202604280651.md\n'
+2026-04-28 17:51:46,877 - INFO - Received file: Examining Life 202604280651.md
+2026-04-28 17:51:46,877 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 17:51:46,877 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:51:46,877 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 17:51:46,877 - INFO - Calling sync_to_github...
+2026-04-28 17:51:46,877 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-28 17:51:46,935 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Examining Life.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-04-28 17:51:46,968 - INFO - Files staged
+2026-04-28 17:51:47,024 - INFO - Changes committed
+2026-04-28 17:51:48,661 - INFO - Changes pushed to GitHub
+2026-04-28 17:51:48,662 - INFO - === Script completed ===
+2026-04-28 19:30:46,481 - INFO - === Script started ===
+2026-04-28 19:30:46,482 - INFO - KMVAR_baseName raw: 'Examining Life 202604280651.md\n'
+2026-04-28 19:30:46,482 - INFO - Received file: Examining Life 202604280651.md
+2026-04-28 19:30:46,482 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 19:30:46,482 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 19:30:46,483 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Examining Life.md
+2026-04-28 19:30:46,483 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Examining Life 202604280651.md
+2026-04-28 19:30:46,486 - INFO - Copied media file: /Users/will/Dropbox/zettelkasten/media/Zivon_avatar.png -> /Users/will/Dropbox/Projects/blog/media/Zivon_avatar.png
+2026-04-28 19:30:46,486 - INFO - Media scan complete. Copied 1 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-04-28 19:30:46,486 - INFO - Calling sync_to_github...
+2026-04-28 19:30:46,486 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-28 19:30:46,531 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+2026-04-28 19:30:46,555 - INFO - Files staged
+2026-04-28 19:30:46,582 - INFO - Commit skipped: On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+2026-04-28 19:30:47,477 - INFO - Changes pushed to GitHub
+2026-04-28 19:30:47,478 - INFO - === Script completed ===

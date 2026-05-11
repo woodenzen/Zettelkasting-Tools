@@ -104,3 +104,363 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 2026-04-28 19:30:47,477 - INFO - Changes pushed to GitHub
 2026-04-28 19:30:47,478 - INFO - === Script completed ===
+2026-04-29 20:45:23,425 - INFO - === Script started ===
+2026-04-29 20:45:23,427 - INFO - KMVAR_baseName raw: 'Self-Story and Identity 202604290700.md\n'
+2026-04-29 20:45:23,427 - INFO - Received file: Self-Story and Identity 202604290700.md
+2026-04-29 20:45:23,427 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-04-29 20:45:23,427 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-04-29 20:45:23,427 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-04-29 20:45:23,427 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-04-29 20:45:23,427 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-04-29 20:45:23,427 - INFO - Calling sync_to_github...
+2026-04-29 20:45:23,427 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-29 20:45:23,522 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Self-Story and Identity.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+2026-04-29 20:45:23,552 - INFO - Files staged
+2026-04-29 20:45:23,616 - INFO - Changes committed
+2026-04-29 20:45:25,474 - INFO - Changes pushed to GitHub
+2026-04-29 20:45:25,474 - INFO - === Script completed ===
+2026-04-29 20:48:38,085 - INFO - === Script started ===
+2026-04-29 20:48:38,086 - INFO - KMVAR_baseName raw: 'Self-Story and Identity 202604290700.md\n'
+2026-04-29 20:48:38,086 - INFO - Received file: Self-Story and Identity 202604290700.md
+2026-04-29 20:48:38,086 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-04-29 20:48:38,086 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-04-29 20:48:38,086 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-04-29 20:48:38,086 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-04-29 20:48:38,086 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-04-29 20:48:38,086 - INFO - Calling sync_to_github...
+2026-04-29 20:48:38,086 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-04-29 20:48:38,129 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Self-Story and Identity.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-04-29 20:48:38,157 - INFO - Files staged
+2026-04-29 20:48:38,221 - INFO - Changes committed
+2026-04-29 20:48:39,812 - INFO - Changes pushed to GitHub
+2026-04-29 20:48:39,813 - INFO - === Script completed ===
+2026-05-01 14:19:30,734 - INFO - === Script started ===
+2026-05-01 14:19:30,736 - INFO - KMVAR_baseName raw: 'Self-Story and Identity 202604290700.md\n'
+2026-05-01 14:19:30,736 - INFO - Received file: Self-Story and Identity 202604290700.md
+2026-05-01 14:19:30,736 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 14:19:30,736 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 14:19:30,737 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 14:19:30,737 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 14:19:30,737 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-01 14:19:30,737 - INFO - Calling sync_to_github...
+2026-05-01 14:19:30,737 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-01 14:19:30,786 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Self-Story and Identity.md
+	modified:   app.styles.scss
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-01 14:19:30,814 - INFO - Files staged
+2026-05-01 14:19:30,873 - INFO - Changes committed
+2026-05-01 14:19:32,820 - INFO - Changes pushed to GitHub
+2026-05-01 14:19:32,820 - INFO - === Script completed ===
+2026-05-01 15:07:38,542 - INFO - === Script started ===
+2026-05-01 15:07:38,544 - INFO - KMVAR_baseName raw: 'Self-Story and Identity 202604290700.md\n'
+2026-05-01 15:07:38,544 - INFO - Received file: Self-Story and Identity 202604290700.md
+2026-05-01 15:07:38,544 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 15:07:38,544 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 15:07:38,544 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 15:07:38,544 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 15:07:38,544 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-01 15:07:38,544 - INFO - Calling sync_to_github...
+2026-05-01 15:07:38,544 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-01 15:07:38,597 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .app/lib/modules/notes/note.layout.njk
+	modified:   Books I Read in 2025.md
+	modified:   Examining Life.md
+	modified:   Gift of the gods.md
+	modified:   LLM Dialogues Toward Inner Citizenship.md
+	modified:   Remains of the Day.md
+	modified:   Self-Story and Identity.md
+	modified:   The Cooking Revolution.md
+	modified:   The Inbox Mindset.md
+	modified:   Waiting, waiting.md
+	modified:   Watching the watcher.md
+	modified:   app.styles.scss
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-01 15:07:38,633 - INFO - Files staged
+2026-05-01 15:07:38,702 - INFO - Changes committed
+2026-05-01 15:07:40,489 - INFO - Changes pushed to GitHub
+2026-05-01 15:07:40,490 - INFO - === Script completed ===
+2026-05-01 16:29:33,009 - INFO - === Script started ===
+2026-05-01 16:29:33,012 - INFO - KMVAR_baseName raw: 'Self-Story and Identity 202604290700.md\n'
+2026-05-01 16:29:33,012 - INFO - Received file: Self-Story and Identity 202604290700.md
+2026-05-01 16:29:33,012 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 16:29:33,012 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 16:29:33,012 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Self-Story and Identity.md
+2026-05-01 16:29:33,012 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Self-Story and Identity 202604290700.md
+2026-05-01 16:29:33,012 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-01 16:29:33,012 - INFO - Calling sync_to_github...
+2026-05-01 16:29:33,012 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-01 16:29:33,056 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .app/lib/modules/notes/note.layout.njk
+	modified:   app.styles.scss
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-01 16:29:33,086 - INFO - Files staged
+2026-05-01 16:29:33,153 - INFO - Changes committed
+2026-05-01 16:29:34,847 - INFO - Changes pushed to GitHub
+2026-05-01 16:29:34,848 - INFO - === Script completed ===
+2026-05-04 08:55:20,777 - INFO - === Script started ===
+2026-05-04 08:55:20,780 - INFO - KMVAR_baseName raw: 'Seeing After the Fact 202605040842.md\n'
+2026-05-04 08:55:20,780 - INFO - Received file: Seeing After the Fact 202605040842.md
+2026-05-04 08:55:20,780 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Seeing After the Fact 202605040842.md
+2026-05-04 08:55:20,780 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Seeing After the Fact.md
+2026-05-04 08:55:20,781 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Seeing After the Fact.md
+2026-05-04 08:55:20,781 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Seeing After the Fact 202605040842.md
+2026-05-04 08:55:20,781 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-04 08:55:20,781 - INFO - Calling sync_to_github...
+2026-05-04 08:55:20,781 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-04 08:55:20,879 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Seeing After the Fact.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+2026-05-04 08:55:20,910 - INFO - Files staged
+2026-05-04 08:55:20,973 - INFO - Changes committed
+2026-05-04 08:55:23,048 - INFO - Changes pushed to GitHub
+2026-05-04 08:55:23,049 - INFO - === Script completed ===
+2026-05-07 16:36:59,549 - INFO - === Script started ===
+2026-05-07 16:36:59,555 - INFO - KMVAR_baseName raw: 'On Seeing 202605071631.md\n'
+2026-05-07 16:36:59,556 - INFO - Received file: On Seeing 202605071631.md
+2026-05-07 16:36:59,557 - INFO - Source file: /Users/will/Dropbox/zettelkasten/On Seeing 202605071631.md
+2026-05-07 16:36:59,557 - INFO - Target file: /Users/will/Dropbox/Projects/blog/On Seeing.md
+2026-05-07 16:36:59,558 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/On Seeing.md
+2026-05-07 16:36:59,558 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/On Seeing 202605071631.md
+2026-05-07 16:36:59,559 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-07 16:36:59,560 - INFO - Calling sync_to_github...
+2026-05-07 16:36:59,560 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-07 16:36:59,675 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	On Seeing.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+2026-05-07 16:36:59,710 - INFO - Files staged
+2026-05-07 16:36:59,776 - INFO - Changes committed
+2026-05-07 16:37:01,483 - INFO - Changes pushed to GitHub
+2026-05-07 16:37:01,483 - INFO - === Script completed ===
+2026-05-07 18:03:34,675 - INFO - === Script started ===
+2026-05-07 18:03:34,677 - INFO - KMVAR_baseName raw: 'B-The Correspondence.md\n'
+2026-05-07 18:03:34,677 - INFO - Received file: B-The Correspondence.md
+2026-05-07 18:03:34,677 - INFO - Source file: /Users/will/Dropbox/zettelkasten/B-The Correspondence.md
+2026-05-07 18:03:34,677 - INFO - Target file: /Users/will/Dropbox/Projects/blog/B-The.md
+2026-05-07 18:03:34,678 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/B-The.md
+2026-05-07 18:03:34,678 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/B-The Correspondence.md
+2026-05-07 18:03:34,681 - INFO - Copied media file: /Users/will/Dropbox/zettelkasten/media/Virginia_evans.jpeg -> /Users/will/Dropbox/Projects/blog/media/Virginia_evans.jpeg
+2026-05-07 18:03:34,681 - INFO - Media scan complete. Copied 1 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-07 18:03:34,681 - INFO - Calling sync_to_github...
+2026-05-07 18:03:34,681 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-07 18:03:34,732 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   On Seeing.md
+	modified:   Seeing After the Fact.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	B-The.md
+	Convert Note Title to Blog Link.kmmacros
+	media/Virginia_evans.jpeg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-07 18:03:34,767 - INFO - Files staged
+2026-05-07 18:03:34,822 - INFO - Changes committed
+2026-05-07 18:03:36,748 - INFO - Changes pushed to GitHub
+2026-05-07 18:03:36,749 - INFO - === Script completed ===
+2026-05-08 20:07:40,571 - INFO - === Script started ===
+2026-05-08 20:07:40,573 - INFO - KMVAR_baseName raw: 'B-The Correspondence 202603050810.md\n'
+2026-05-08 20:07:40,573 - INFO - Received file: B-The Correspondence 202603050810.md
+2026-05-08 20:07:40,573 - INFO - Source file: /Users/will/Dropbox/zettelkasten/B-The Correspondence 202603050810.md
+2026-05-08 20:07:40,573 - INFO - Target file: /Users/will/Dropbox/Projects/blog/B-The Correspondence.md
+2026-05-08 20:07:40,573 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/B-The Correspondence.md
+2026-05-08 20:07:40,574 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/B-The Correspondence 202603050810.md
+2026-05-08 20:07:40,576 - INFO - Copied media file: /Users/will/Dropbox/zettelkasten/media/Virginia_evans.jpeg -> /Users/will/Dropbox/Projects/blog/media/Virginia_evans.jpeg
+2026-05-08 20:07:40,577 - INFO - Media scan complete. Copied 1 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-08 20:07:40,577 - INFO - Calling sync_to_github...
+2026-05-08 20:07:40,577 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-08 20:07:40,680 - INFO - Git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   B-The.md
+	modified:   On Seeing.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	B-The Correspondence.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-08 20:07:40,718 - INFO - Files staged
+2026-05-08 20:07:40,789 - INFO - Changes committed
+2026-05-08 20:07:42,642 - INFO - Changes pushed to GitHub
+2026-05-08 20:07:42,643 - INFO - === Script completed ===
+2026-05-11 14:21:57,819 - INFO - === Script started ===
+2026-05-11 14:21:57,821 - INFO - KMVAR_baseName raw: 'Positivity Resonance Theory 202605111349.md\n'
+2026-05-11 14:21:57,821 - INFO - Received file: Positivity Resonance Theory 202605111349.md
+2026-05-11 14:21:57,821 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:21:57,821 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:21:57,821 - INFO - Hard link created: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:21:57,821 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:21:57,821 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-11 14:21:57,821 - INFO - Calling sync_to_github...
+2026-05-11 14:21:57,822 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-11 14:21:57,926 - INFO - Git status: On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    B-The.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Positivity Resonance Theory.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-11 14:21:57,954 - INFO - Files staged
+2026-05-11 14:21:58,027 - INFO - Changes committed
+2026-05-11 14:21:58,952 - ERROR - Push failed: To https://github.com/woodenzen/blog.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/woodenzen/blog.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-05-11 14:21:58,952 - INFO - === Script completed ===
+2026-05-11 14:25:18,612 - INFO - === Script started ===
+2026-05-11 14:25:18,613 - INFO - KMVAR_baseName raw: 'Positivity Resonance Theory 202605111349.md\n'
+2026-05-11 14:25:18,613 - INFO - Received file: Positivity Resonance Theory 202605111349.md
+2026-05-11 14:25:18,613 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:25:18,613 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:25:18,614 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:25:18,614 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:25:18,614 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-11 14:25:18,614 - INFO - Calling sync_to_github...
+2026-05-11 14:25:18,614 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-11 14:25:18,658 - INFO - Git status: On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Positivity Resonance Theory.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2026-05-11 14:25:18,682 - INFO - Files staged
+2026-05-11 14:25:18,732 - INFO - Changes committed
+2026-05-11 14:25:19,570 - ERROR - Push failed: To https://github.com/woodenzen/blog.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/woodenzen/blog.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-05-11 14:25:19,572 - INFO - === Script completed ===
+2026-05-11 14:30:23,816 - INFO - === Script started ===
+2026-05-11 14:30:23,818 - INFO - KMVAR_baseName raw: 'Positivity Resonance Theory 202605111349.md\n'
+2026-05-11 14:30:23,819 - INFO - Received file: Positivity Resonance Theory 202605111349.md
+2026-05-11 14:30:23,819 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:30:23,819 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:30:23,819 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:30:23,819 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:30:23,819 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-11 14:30:23,819 - INFO - Calling sync_to_github...
+2026-05-11 14:30:23,819 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-11 14:30:23,865 - INFO - Git status: On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+2026-05-11 14:30:23,888 - INFO - Files staged
+2026-05-11 14:30:23,916 - INFO - Commit skipped: On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+
+nothing to commit, working tree clean
+2026-05-11 14:30:24,670 - ERROR - Push failed: To https://github.com/woodenzen/blog.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/woodenzen/blog.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-05-11 14:30:24,670 - INFO - === Script completed ===
+2026-05-11 14:31:41,850 - INFO - === Script started ===
+2026-05-11 14:31:41,851 - INFO - KMVAR_baseName raw: 'Positivity Resonance Theory 202605111349.md\n'
+2026-05-11 14:31:41,851 - INFO - Received file: Positivity Resonance Theory 202605111349.md
+2026-05-11 14:31:41,851 - INFO - Source file: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:31:41,851 - INFO - Target file: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:31:41,851 - WARNING - Hard link already exists: /Users/will/Dropbox/Projects/blog/Positivity Resonance Theory.md
+2026-05-11 14:31:41,851 - INFO - Scanning for media references in: /Users/will/Dropbox/zettelkasten/Positivity Resonance Theory 202605111349.md
+2026-05-11 14:31:41,851 - INFO - Media scan complete. Copied 0 file(s) to /Users/will/Dropbox/Projects/blog/media
+2026-05-11 14:31:41,851 - INFO - Calling sync_to_github...
+2026-05-11 14:31:41,851 - INFO - Starting GitHub sync for: /Users/will/Dropbox/Projects/blog/
+2026-05-11 14:31:41,896 - INFO - Git status: On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+2026-05-11 14:31:41,919 - INFO - Files staged
+2026-05-11 14:31:41,946 - INFO - Commit skipped: On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+
+nothing to commit, working tree clean
+2026-05-11 14:31:42,816 - ERROR - Push failed: To https://github.com/woodenzen/blog.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/woodenzen/blog.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-05-11 14:31:42,816 - INFO - === Script completed ===
